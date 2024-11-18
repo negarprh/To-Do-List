@@ -1,0 +1,54 @@
+body, html {
+    margin: 0;
+    font-family: sans-serif;
+
+    background-image: url("../img/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.content {
+    margin: 0 auto;
+    width: 400px;
+}
+
+table, td, th {
+    /*border: 2px solid black;*/
+    background-color: rgba(253, 252, 252, 0.19);
+
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+
+}
+
+th {
+    height: 30px;
+    border: 1px solid black;
+}
+
+td {
+    text-align: center;
+    padding: 5px;
+
+}
+
+form {
+
+
+}
+
+#content {
+    width: 70%;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+}
+
+#btn{
+    height: 30px;
+    background-color: hotpink;
+    border: 2px solid red;
+}
