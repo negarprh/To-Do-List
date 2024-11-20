@@ -87,10 +87,9 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ### Screenshots
 
-   ```markdown
    ![Homepage](screenshots/homepage.png)
    ![Empty Task List](screenshots/empty-task-list.png)
    ![Update Task Form](screenshots/update.png)
-   ```
+
 
 This README will make your project stand out and provide clear instructions to others. Let me know if you need further assistance! 🚀
