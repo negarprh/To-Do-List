@@ -44,7 +44,8 @@ Edit an existing task using the update form:
 ---
 
 ### Hover Effects For Long Tasks
-   ![Hover Effect](screenshots/longtasks.png)
+Hover Effect for longer task in table to keep original structure of table
+![Hover Effect](screenshots/longtasks.png)
 
 ---
 
