@@ -1,8 +1,4 @@
-Here's a **GitHub README** template for your Task Master project, along with suggestions for screenshots to include:
-
----
-
-# Task Master
+# Task Master 📝
 
 **Task Master** is a beautifully designed, lightweight, and interactive task management web application built with Flask and SQLAlchemy. It allows users to create, update, and delete tasks effortlessly. The project showcases modern web design practices with a frosted glass UI, gradient backgrounds, and hover effects.
 
@@ -21,7 +17,6 @@ Here's a **GitHub README** template for your Task Master project, along with sug
 - **Backend**: Flask, Python, SQLAlchemy
 - **Frontend**: HTML, CSS (with gradient effects and hover animations)
 - **Database**: SQLite
-- **Hosting**: (Optional, if you deploy it, mention the hosting service, e.g., PythonAnywhere or Render)
 
 ---
 
@@ -29,19 +24,16 @@ Here's a **GitHub README** template for your Task Master project, along with sug
 Here’s what the application looks like:
 
 ### 1. **Homepage with Tasks**
-Show the main page with several tasks listed in the table and the form for adding new tasks. Highlight the frosted-glass UI and modern table design.
+   ![Homepage](screenshots/homepage.png)
 
 ### 2. **Empty Task List**
-Display what the application looks like when no tasks are available, including the message “There are no tasks. Create one below.”
+   ![Empty Task List](screenshots/empty-task-list.png)
 
 ### 3. **Update Task Form**
-Capture the update task form with pre-filled task content, showcasing the input and update button.
+   ![Update Task Form](screenshots/update.png)
 
-### 4. **Hover Effects**
-Showcase a screenshot of the interactive hover effects on the table rows or buttons.
-
-### 5. **Responsive Design**
-If you can, include a screenshot of the app on a mobile device to showcase how it adapts to smaller screens.
+### 4. **Hover Effects For Long Tasks**
+   ![Hover Effect](screenshots/longtasks.png)
 
 ---
 
@@ -76,21 +68,9 @@ If you can, include a screenshot of the app on a mobile device to showcase how i
 
 ## Credits
 - UI inspiration from modern web design trends.
-- Built with ❤️ by [Your Name](https://github.com/prh).
+- Built with ❤️ by [Negar Pirasteh](https://github.com/prh).
 
 ---
 
 ## License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
-
----
-
-### Screenshots
-
-   ```markdown
-   ![Homepage](screenshots/homepage.png)
-   ![Empty Task List](screenshots/empty-task-list.png)
-   ![Update Task Form](screenshots/update.png)
-   ```
-
-This README will make your project stand out and provide clear instructions to others. Let me know if you need further assistance! 🚀
