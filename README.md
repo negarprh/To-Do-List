@@ -33,7 +33,7 @@ Here’s what the application looks like:
    ![Update Task Form](screenshots/update.png)
 
 ### 4. **Hover Effects For Long Tasks**
-   ![Hover Effect](screenshots/longtask.png)
+   ![Hover Effect](screenshots/longtasks.png)
 
 ---
 
