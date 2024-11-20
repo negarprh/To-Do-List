@@ -85,17 +85,12 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ---
 
-### **How to Add Screenshots:**
-1. Take screenshots of the mentioned sections (e.g., homepage, empty tasks, update form).
-2. Save the screenshots in a `screenshots/` folder in your project directory.
-3. Use the following syntax in the README to add images:
+### Screenshots
+
    ```markdown
    ![Homepage](screenshots/homepage.png)
    ![Empty Task List](screenshots/empty-task-list.png)
-   ![Update Task Form](screenshots/update-form.png)
+   ![Update Task Form](screenshots/update.png)
    ```
-4. Push the screenshots folder to your GitHub repository along with your project files.
-
----
 
 This README will make your project stand out and provide clear instructions to others. Let me know if you need further assistance! 🚀
