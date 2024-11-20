@@ -1,8 +1,4 @@
-Here's a **GitHub README** template for your Task Master project, along with suggestions for screenshots to include:
-
----
-
-# Task Master
+# Task Master 📝
 
 **Task Master** is a beautifully designed, lightweight, and interactive task management web application built with Flask and SQLAlchemy. It allows users to create, update, and delete tasks effortlessly. The project showcases modern web design practices with a frosted glass UI, gradient backgrounds, and hover effects.
 
