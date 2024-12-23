@@ -2,6 +2,8 @@
 
 Task Master is a simple and beautifully designed task management web app built with **Flask** and **SQLAlchemy**. The app allows you to keep track of your tasks with a user-friendly interface featuring modern UI elements and smooth animations.
 
+🔗 **Live Demo**: [Task Master](https://task-master-tklj.onrender.com/)
+
 ---
 
 ## Features 🚀
