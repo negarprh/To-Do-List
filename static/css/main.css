@@ -32,6 +32,7 @@ h1 {
     text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
+/* Table Styling */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -72,6 +73,7 @@ tr:hover {
     transition: background-color 0.3s ease;
 }
 
+/* Action Buttons */
 td a {
     text-decoration: none;
     color: #6a11cb;
@@ -81,6 +83,8 @@ td a {
     border-radius: 5px;
     background: rgba(255, 255, 255, 0.2);
     transition: all 0.3s ease;
+    display: inline-block;
+    margin: 5px 0;
 }
 
 td a:hover {
@@ -89,24 +93,25 @@ td a:hover {
     box-shadow: 0 4px 10px rgba(106, 17, 203, 0.3);
 }
 
+/* Form Layout */
 form {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap; /* Adjusts layout for smaller screens */
-    gap: 10px;
+    flex-wrap: wrap;
+    gap: 15px;
     margin-top: 20px;
+    justify-content: center;
+    align-items: center;
 }
 
 #content, #date_created {
     width: 100%;
-    max-width: 400px; /* Limit the maximum width */
+    max-width: 350px; /* Reduce max-width for better layout */
     padding: 10px;
     border: 2px solid rgba(255, 255, 255, 0.3);
     border-radius: 8px;
     background: rgba(255, 255, 255, 0.1);
     color: #fff;
     font-size: 1rem;
-    text-align: center;
     outline: none;
 }
 
@@ -114,6 +119,7 @@ form {
     color: rgba(255, 255, 255, 0.7);
 }
 
+/* Submit Button */
 #btn {
     background: #2575fc;
     border: none;
@@ -126,7 +132,8 @@ form {
     box-shadow: 0 4px 10px rgba(37, 117, 252, 0.4);
     transition: all 0.3s ease;
     width: 100%;
-    max-width: 150px; /* Button adapts for smaller screens */
+    max-width: 150px;
+    text-align: center;
 }
 
 #btn:hover {
@@ -134,56 +141,52 @@ form {
     box-shadow: 0 4px 15px rgba(106, 17, 203, 0.5);
 }
 
-#date_created::-webkit-calendar-picker-indicator {
-    filter: invert(1); /* Makes the calendar icon white */
+/* Empty Table State */
+.empty-table {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.7);
+    padding: 15px;
+    margin: 15px 0;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    text-align: center;
 }
 
-/* Media Queries for Responsiveness */
-
-/* Tablets and Small Screens (Max Width: 768px) */
-@media (max-width: 768px) {
-    h1 {
-        font-size: 2rem;
-    }
-
-    .content {
-        padding: 15px 20px;
-        border-radius: 10px;
-    }
-
-    th, td {
-        font-size: 0.9rem;
-        padding: 10px;
-    }
-
-    td a {
-        font-size: 0.8rem;
-        padding: 5px;
-    }
-
-    form {
-        gap: 8px;
-    }
-
-    #content, #date_created {
-        font-size: 0.9rem;
-    }
-
-    #btn {
-        font-size: 0.9rem;
-        padding: 8px 16px;
-    }
+/* Update Form Fixes */
+.update-task {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
 }
 
-/* Mobile Screens (Max Width: 480px) */
+.update-task label {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.update-task input {
+    font-size: 0.85rem;
+    padding: 8px;
+    width: 100%;
+    max-width: 300px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    outline: none;
+}
+
+.update-task input:focus {
+    border-color: #6a11cb;
+}
+
+/* Responsive Fixes */
 @media (max-width: 480px) {
-    h1 {
-        font-size: 1.8rem;
-    }
-
     .content {
-        padding: 10px 15px;
-        margin: 10px;
+        padding: 15px;
+        width: 95%;
     }
 
     th, td {
@@ -192,20 +195,27 @@ form {
     }
 
     td a {
-        font-size: 0.7rem;
-        padding: 4px 8px;
-    }
-
-    form {
-        gap: 5px;
-    }
-
-    #content, #date_created {
-        font-size: 0.8rem;
+        display: block;
+        width: 90%;
+        margin: 5px auto;
+        text-align: center;
     }
 
     #btn {
-        font-size: 0.8rem;
-        padding: 6px 12px;
+        font-size: 0.9rem;
+        padding: 10px 15px;
+        width: 100%;
+        max-width: 200px;
+    }
+
+    .empty-table {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+    form {
+        flex-direction: column;
+        gap: 10px;
+        width: 92%;
+
     }
 }
