@@ -2,6 +2,8 @@
 
 Task Master is a simple and beautifully designed task management web app built with **Flask** and **SQLAlchemy**. The app allows you to keep track of your tasks with a user-friendly interface featuring modern UI elements and smooth animations.
 
+🔗 **Live Demo**: [Task Master](https://task-master-tklj.onrender.com/)
+
 ---
 
 ## Features 🚀
@@ -15,11 +17,13 @@ Task Master is a simple and beautifully designed task management web app built w
 ---
 
 ## How It Works 🔧
+1. **Live Demo Available!**  
+   Experience the app directly through the [Live Demo](https://task-master-tklj.onrender.com/).
 
-1. **Homepage**: View all your tasks in a visually appealing table. 
+2. **Homepage**: View all your tasks in a visually appealing table. 
    - Long task names are truncated but expand smoothly on hover.
-2. **Add Tasks**: Use the input form to add new tasks.
-3. **Edit or Delete Tasks**: Click the **Update** button to modify a task or **Delete** to remove it.
+3. **Add Tasks**: Use the input form to add new tasks.
+4. **Edit or Delete Tasks**: Click the **Update** button to modify a task or **Delete** to remove it.
 
 ---
 
@@ -59,6 +63,7 @@ Hover Effect for longer task in table to keep original structure of table
 ---
 
 ## Getting Started 🛠️
+Want to explore or run the app locally? Follow these steps:
 
 ### Installation Steps
 1. Clone the repository:
@@ -69,7 +74,7 @@ Hover Effect for longer task in table to keep original structure of table
 
 2. Install dependencies:
    ```bash
-   pip install flask flask-sqlalchemy
+   pip install -r requirements.txt
    ```
 
 3. Run the application:
