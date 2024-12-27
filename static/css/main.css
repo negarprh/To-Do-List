@@ -9,8 +9,8 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    overflow: auto; /* Prevents overflow issues for small screens */
+    min-height: 100vh;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 .content {
@@ -22,6 +22,7 @@ body, html {
     max-width: 600px;
     text-align: center;
     backdrop-filter: blur(15px);
+    margin: 20px; /* Add margin for smaller screens */
 }
 
 h1 {
@@ -36,7 +37,6 @@ table {
     border-collapse: collapse;
     margin-bottom: 20px;
     table-layout: fixed;
-
 }
 
 thead {
@@ -62,7 +62,6 @@ td:hover {
 }
 
 th {
-
     font-weight: 600;
     text-transform: uppercase;
     font-size: 0.9rem;
@@ -93,12 +92,14 @@ td a:hover {
 form {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap; /* Adjusts layout for smaller screens */
     gap: 10px;
     margin-top: 20px;
 }
 
-#content {
-    width: 70%;
+#content, #date_created {
+    width: 100%;
+    max-width: 400px; /* Limit the maximum width */
     padding: 10px;
     border: 2px solid rgba(255, 255, 255, 0.3);
     border-radius: 8px;
@@ -109,7 +110,7 @@ form {
     outline: none;
 }
 
-#content::placeholder {
+#content::placeholder, #date_created::placeholder {
     color: rgba(255, 255, 255, 0.7);
 }
 
@@ -124,9 +125,87 @@ form {
     font-weight: 600;
     box-shadow: 0 4px 10px rgba(37, 117, 252, 0.4);
     transition: all 0.3s ease;
+    width: 100%;
+    max-width: 150px; /* Button adapts for smaller screens */
 }
 
 #btn:hover {
     background: #6a11cb;
     box-shadow: 0 4px 15px rgba(106, 17, 203, 0.5);
+}
+
+#date_created::-webkit-calendar-picker-indicator {
+    filter: invert(1); /* Makes the calendar icon white */
+}
+
+/* Media Queries for Responsiveness */
+
+/* Tablets and Small Screens (Max Width: 768px) */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .content {
+        padding: 15px 20px;
+        border-radius: 10px;
+    }
+
+    th, td {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    td a {
+        font-size: 0.8rem;
+        padding: 5px;
+    }
+
+    form {
+        gap: 8px;
+    }
+
+    #content, #date_created {
+        font-size: 0.9rem;
+    }
+
+    #btn {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}
+
+/* Mobile Screens (Max Width: 480px) */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .content {
+        padding: 10px 15px;
+        margin: 10px;
+    }
+
+    th, td {
+        font-size: 0.8rem;
+        padding: 8px;
+    }
+
+    td a {
+        font-size: 0.7rem;
+        padding: 4px 8px;
+    }
+
+    form {
+        gap: 5px;
+    }
+
+    #content, #date_created {
+        font-size: 0.8rem;
+    }
+
+    #btn {
+        font-size: 0.8rem;
+        padding: 6px 12px;
+    }
 }
