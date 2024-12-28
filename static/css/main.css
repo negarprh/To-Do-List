@@ -8,9 +8,10 @@ body, html {
     color: #fff;
     display: flex;
     justify-content: center;
-    align-items: center;
+
     min-height: 100vh;
     overflow-x: hidden; /* Prevent horizontal scrolling */
+    flex-direction: column;
 }
 
 .content {
@@ -219,5 +220,47 @@ form {
         gap: 10px;
         width: 92%;
 
+    }
+}
+
+.content-wrapper {
+     flex: 1; /* Pushes footer to the bottom */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers content vertically if there's extra space */
+    align-items: center;
+}
+
+.footer {
+    text-align: center; /* Center the footer content */
+    padding: 2px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.footer a {
+    color: #6a11cb; /* Theme color */
+    text-decoration: none;
+    font-weight: 600;
+    margin: 0 8px; /* Adds spacing between links */
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #2575fc; /* Hover color matches the theme */
+}
+
+.footer-content p {
+    margin: 5px 0; /* Adds spacing between footer text */
+}
+
+@media (max-width: 480px) {
+    .footer {
+        font-size: 0.8rem; /* Adjust font size for smaller screens */
+        padding: 10px 15px;
+    }
+
+    .footer a {
+        font-size: 0.8rem; /* Adjust link font size for better readability */
     }
 }
